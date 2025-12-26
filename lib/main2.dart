@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 // 单选列表
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Flutter App', home: HomePage());
+    return const MaterialApp(title: 'Flutter App', home: HomePage());
   }
 }
 
@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Flutter Test')),
+      appBar: AppBar(title: const Text('Flutter Test')),
       body: ListView.builder(
         itemBuilder: (context, index) {
           final isSelected = selectedIndex == index;
